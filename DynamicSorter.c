@@ -358,6 +358,8 @@ void bitonicSort(int arr[], int low, int cnt, bool dir) {
         bitonicSort(arr, low, k, true);
         bitonicSort(arr, low + k, k, false);
         bitonicMerge(arr, low, cnt, dir);
+        printf("Sorted array using Bitonic Sort: ");
+        printArray(arr, cnt);
     }
 }
 // Pancake Sort
@@ -582,7 +584,7 @@ int main() {
             combSort(arr, n);
             break;
         case 13:
-            printf("Pigeonhole Sort: It is a sorting algorithm that is suitable for sorting lists of elements where the number of elements and the range of key values are approximately the same. It works by distributing elements into "holes" or "buckets" and then sorting them individually.\n\n");
+            printf("Pigeonhole Sort: It is a sorting algorithm that is suitable for sorting lists of elements where the number of elements and the range of key values are approximately the same. It works by distributing elements into 'holes' or 'buckets' and then sorting them individually.\n\n");
             printf("Best case: O(n + range)\n");
             printf("Average case: O(n + range)\n");
             printf("Worst case: O(n + range)\n");
